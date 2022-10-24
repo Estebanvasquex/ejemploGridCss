@@ -1,0 +1,44 @@
+.app {
+
+    background: #f1f1f1;
+    /* 1 Agregar display */
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    /* 2 Agregar áreas del grid */
+    grid-template-areas: 
+    "header"
+    "contenido"
+    "footer";
+    grid-template-columns: auto; /* 3 Tamaño total de la pantalla del navegador y será automatico segun el contenido que se inserte */
+    grid-template-rows: /* 10% 20px 50vh 10% */  50px 70vh auto ;
+
+    
+}
+
+.encabezado {
+    background: #f1f1f1;
+    grid-area: header;/*4 Defiir el nombre del área */
+    align-items: center;
+    display: flex;
+    padding: 0 2rem;
+    
+}
+
+
+
+.contenido {
+
+   
+    grid-area: contenido;
+    padding: 0 2rem;
+
+}
+
+.rodapie { 
+    background: #fdfdfd;
+    color: #333333;
+    grid-area: footer;
+    padding: 1rem;
+    text-align: center;
+    
+}

@@ -1,0 +1,96 @@
+.destaques{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 24%; /* distribución columnas */
+    grid-auto-rows: 33.3% 33.3% 33.3%; /* distribución filas */
+    height: calc(110% - 50px) ; /* definir el alto restando el encabezado */
+    gap: .2rem;
+}
+
+.destaques__principal{
+    background: url('../img/fortnite.jpg'); /* insertar imagen de fondo */
+    background-size: cover; /* la imagen se ajusta al espacio disponible */
+    background-position: center; 
+    background-repeat: no-repeat;
+
+
+    grid-column-start: 1; /* inicio de sección destaques__principal en columnas */
+    grid-column-end: 4; /* fin de sección destaques__principal en columnas */
+    grid-row-start: 1;/* inicio de sección destaques__principal en filas */
+    grid-row-end: 3; /* fin de sección destaques__principal en filas */
+
+}
+
+.destaques__secundario:nth-child(2)/* selecconar el primer div */{
+    background: url('../img/pubg.jpg');
+    background-size: cover; /* la imagen se ajusta al espacio disponible */
+    background-position: center; 
+    background-repeat: no-repeat;
+    grid-column: 4 / 5; 
+    grid-row: 1 / 2; 
+}
+
+
+.destaques__secundario:nth-child(3){
+    background: url('../img/slack.png') center / cover no-repeat;
+    grid-column: 4 / 5; 
+    grid-row-start: 2 / 3;
+
+}
+
+.destaques__secundario:nth-child(4){
+    background: url('../img/whatsapp.png') center / cover no-repeat;
+    grid-column: 4 / 5; /* inicio de sección destaques__principal en columnas */
+    grid-row: 3 / 4;
+}
+
+.destaques__secundario:nth-child(5){
+    background: url('../img/cs-go.jpg') center / cover no-repeat;
+    grid-column: 3 / 4; /* inicio de sección destaques__principal en columnas */
+    grid-row: 3 / 4;
+}
+
+.destaques__categorias{
+    background-color: aqua;
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+
+}
+
+.destaques__categorias___lista{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+
+}
+
+.destaques__categorias___item{
+    align-items: center;
+    background: white;
+    display: flex;
+    color: #333333;
+    width: 50%; /* centra los elementos */
+    padding: 1rem;
+}
+
+.destaques__categorias___link{
+    color: inherit; /* con este códodigo le digo a los link que su color sea inherente y puede tomarlos desde el item */
+}
+
+.destaques__titulo{
+    color: #fdfdfd;
+    background: rgb(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    padding: .6rem;
+}
+
+.box{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+
+
